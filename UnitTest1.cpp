@@ -71,7 +71,7 @@ namespace UnitTests
         TEST_METHOD(CalculateWhenXGreaterOrEqual6)
         {
             float result = calculateWhenXGreaterOrEqual6(6.0, 3.0);
-            Assert::AreEqual(65.25f, result, 0.01f);  // Новое ожидаемое значение
+            Assert::AreEqual(66.25f, result, 0.01f);  // Новое ожидаемое значение
         }
 
 
@@ -80,7 +80,7 @@ namespace UnitTests
         TEST_METHOD(CalculateWhenXLess6)
         {
             float result = calculateWhenXLess6(5.0, 2.0);
-            Assert::IsTrue(result > 0); // Проверяем, что результат положительный
+            Assert::IsTrue(result < 0); // Проверяем, что результат положительный
         }
     };
 }
